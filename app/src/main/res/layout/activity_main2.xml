@@ -51,5 +51,6 @@
        android:layout_below="@+id/fgrade"
        android:layout_alignStart="@+id/RAfin"
        android:layout_marginTop="68dp"
-       android:text="Back"/>
+       android:text="Back"
+       android:onClick="backMain"/>
 </RelativeLayout>
