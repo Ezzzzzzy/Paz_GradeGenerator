@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context="com.example.paz.gradegenerator.Main2Activity">
+
+    <TextView
+        android:id="@+id/RA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginBottom="28dp"
+        android:text="Your RA is"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Raw Average"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/RAfin"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/RA"
+        android:layout_toStartOf="@+id/Fin" />
+
+    <TextView
+        android:id="@+id/fgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="your final grade is"
+        android:layout_below="@+id/RA"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Final Grade"
+        android:textSize="20dp"
+        android:id="@+id/Fin"
+        android:layout_alignBaseline="@+id/fgrade"
+        android:layout_alignBottom="@+id/fgrade"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/fgrade"
+       android:layout_alignStart="@+id/RAfin"
+       android:layout_marginTop="68dp"
+       android:text="Back"/>
+</RelativeLayout>
